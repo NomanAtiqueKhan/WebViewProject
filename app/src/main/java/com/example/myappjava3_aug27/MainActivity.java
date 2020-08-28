@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         superProgressBar =  findViewById(R.id.myProgressBar);
         superImageView =  findViewById(R.id.myImageView);
         superWebView =  findViewById(R.id.myWebView);
-    //Toast.makeText(this,"Hello",Toast.LENGTH_LONG).show();
+    Toast.makeText(this,"Now branching  in actions",Toast.LENGTH_LONG).show();
 
         superProgressBar.setMax(100);
         superWebView.loadUrl("https://www.google.com");
