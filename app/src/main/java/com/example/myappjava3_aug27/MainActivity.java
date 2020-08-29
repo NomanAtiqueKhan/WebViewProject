@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import javax.security.auth.login.LoginException;
+
 public class MainActivity extends AppCompatActivity {
 
     ProgressBar superProgressBar;
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         superProgressBar =  findViewById(R.id.myProgressBar);
         superImageView =  findViewById(R.id.myImageView);
         superWebView =  findViewById(R.id.myWebView);
-    Toast.makeText(this,"Now branching  in actions",Toast.LENGTH_LONG).show();
+    Toast.makeText(this, R.string.myString,Toast.LENGTH_LONG).show();
 
         superProgressBar.setMax(100);
         superWebView.loadUrl("https://www.google.com");
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+ //todo some comment
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
